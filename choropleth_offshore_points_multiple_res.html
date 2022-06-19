@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2a40d55fe5ba4c20aca4688ad28e2de9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2a40d55fe5ba4c20aca4688ad28e2de9" ></div>
+        
+</body>
+<script>    
+    
+            var map_2a40d55fe5ba4c20aca4688ad28e2de9 = L.map(
+                "map_2a40d55fe5ba4c20aca4688ad28e2de9",
+                {
+                    center: [48.0, 12.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_afe2937812a14237ae22325b9a5775f9 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2a40d55fe5ba4c20aca4688ad28e2de9);
+        
+    
+        function geo_json_fdbe32608f3a447eb01e9c5e8e6c48b7_styler(feature) {
+            switch(feature.id) {
+                case "2": 
+                    return {"color": "black", "fillColor": "#ff0000ff", "fillOpacity": 0.7, "weight": 1};
+                case "3": 
+                    return {"color": "black", "fillColor": "#108800ff", "fillOpacity": 0.7, "weight": 1};
+                default:
+                    return {"color": "black", "fillColor": "#008000ff", "fillOpacity": 0.7, "weight": 1};
+            }
+        }
+
+        function geo_json_fdbe32608f3a447eb01e9c5e8e6c48b7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_fdbe32608f3a447eb01e9c5e8e6c48b7 = L.geoJson(null, {
+                onEachFeature: geo_json_fdbe32608f3a447eb01e9c5e8e6c48b7_onEachFeature,
+            
+                style: geo_json_fdbe32608f3a447eb01e9c5e8e6c48b7_styler,
+        });
+
+        function geo_json_fdbe32608f3a447eb01e9c5e8e6c48b7_add (data) {
+            geo_json_fdbe32608f3a447eb01e9c5e8e6c48b7
+                .addData(data)
+                .addTo(map_2a40d55fe5ba4c20aca4688ad28e2de9);
+        }
+            geo_json_fdbe32608f3a447eb01e9c5e8e6c48b7_add({"features": [{"geometry": {"coordinates": [[[4.012621, 63.327061], [-2.297526, 61.54551], [-0.931587, 57.689497], [5.523647, 55.706768], [11.555978, 58.130531], [11.08066, 61.540515], [8.644221, 61.890838], [4.012621, 63.327061]]], "type": "Polygon"}, "hex_id": "8109bffffffffff", "id": "0", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[18.31474, 44.47068], [18.32526, 39.988178], [23.474781, 37.630343], [28.846869, 39.643311], [29.387082, 44.107766], [24.013384, 46.595885], [18.31474, 44.47068]]], "type": "Polygon"}, "hex_id": "811efffffffffff", "id": "1", "properties": {"country": "Greece\n", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[5.523647, 55.706768], [6.259687, 51.96477], [12.345747, 50.554275], [18.289963, 52.819052], [18.275236, 56.632953], [11.555978, 58.130531], [5.523647, 55.706768]]], "type": "Polygon"}, "hex_id": "811f3ffffffffff", "id": "2", "properties": {"country": "Denmark", "type": "Firing Area", "value": 32}, "type": "Feature"}, {"geometry": {"coordinates": [[[23.474781, 37.630343], [23.243175, 32.934452], [27.91173, 30.313709], [32.928331, 32.240102], [33.614584, 36.858664], [28.846869, 39.643311], [23.474781, 37.630343]]], "type": "Polygon"}, "hex_id": "813f7ffffffffff", "id": "3", "properties": {"country": "Greece\n", "type": "Firing Area", "value": 2}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        function geo_json_f9c8ba1108264c76a236bf9b2a6091c2_styler(feature) {
+            switch(feature.id) {
+                case "7": 
+                    return {"color": "black", "fillColor": "#ff0000ff", "fillOpacity": 0.7, "weight": 1};
+                case "8": case "11": case "13": 
+                    return {"color": "black", "fillColor": "#249200ff", "fillOpacity": 0.7, "weight": 1};
+                case "9": 
+                    return {"color": "black", "fillColor": "#49a400ff", "fillOpacity": 0.7, "weight": 1};
+                case "12": 
+                    return {"color": "black", "fillColor": "#6db700ff", "fillOpacity": 0.7, "weight": 1};
+                default:
+                    return {"color": "black", "fillColor": "#008000ff", "fillOpacity": 0.7, "weight": 1};
+            }
+        }
+
+        function geo_json_f9c8ba1108264c76a236bf9b2a6091c2_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f9c8ba1108264c76a236bf9b2a6091c2 = L.geoJson(null, {
+                onEachFeature: geo_json_f9c8ba1108264c76a236bf9b2a6091c2_onEachFeature,
+            
+                style: geo_json_f9c8ba1108264c76a236bf9b2a6091c2_styler,
+        });
+
+        function geo_json_f9c8ba1108264c76a236bf9b2a6091c2_add (data) {
+            geo_json_f9c8ba1108264c76a236bf9b2a6091c2
+                .addData(data)
+                .addTo(map_2a40d55fe5ba4c20aca4688ad28e2de9);
+        }
+            geo_json_f9c8ba1108264c76a236bf9b2a6091c2_add({"features": [{"geometry": {"coordinates": [[[9.60198, 58.479613], [9.682736, 57.978393], [10.652048, 57.804881], [11.555978, 58.130531], [11.491807, 58.6332], [10.506961, 58.80883], [9.60198, 58.479613]]], "type": "Polygon"}, "hex_id": "83099afffffffff", "id": "0", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[22.078459, 39.647346], [22.053163, 38.990886], [22.784149, 38.644236], [23.545178, 38.951439], [23.581131, 39.60773], [22.845414, 39.957039], [22.078459, 39.647346]]], "type": "Polygon"}, "hex_id": "831edefffffffff", "id": "1", "properties": {"country": "Greece\n", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[12.839846, 54.798544], [12.888576, 54.256457], [13.799424, 54.037627], [14.673682, 54.358877], [14.640207, 54.902182], [13.717125, 55.123081], [12.839846, 54.798544]]], "type": "Polygon"}, "hex_id": "831f01fffffffff", "id": "2", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[9.296563, 54.514365], [9.374531, 53.975514], [10.280052, 53.783253], [11.121177, 54.128426], [11.057592, 54.669026], [10.138365, 54.862761], [9.296563, 54.514365]]], "type": "Polygon"}, "hex_id": "831f06fffffffff", "id": "3", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[14.640207, 54.902182], [14.673682, 54.358877], [15.584564, 54.126458], [16.47325, 54.435073], [16.455347, 54.979315], [15.533114, 55.214069], [14.640207, 54.902182]]], "type": "Polygon"}, "hex_id": "831f0cfffffffff", "id": "4", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[9.839975, 56.960452], [9.916531, 56.44374], [10.860149, 56.260141], [11.741681, 56.591404], [11.680885, 57.109629], [10.722652, 57.295139], [9.839975, 56.960452]]], "type": "Polygon"}, "hex_id": "831f20fffffffff", "id": "5", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[9.054551, 56.10039], [9.136608, 55.576825], [10.065692, 55.394879], [10.927107, 55.734903], [10.860149, 56.260141], [9.916531, 56.44374], [9.054551, 56.10039]]], "type": "Polygon"}, "hex_id": "831f22fffffffff", "id": "6", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[10.860149, 56.260141], [10.927107, 55.734903], [11.860105, 55.539449], [12.739823, 55.867327], [12.688484, 56.393983], [11.741681, 56.591404], [10.860149, 56.260141]]], "type": "Polygon"}, "hex_id": "831f23fffffffff", "id": "7", "properties": {"country": "Denmark", "type": "Firing Area", "value": 15}, "type": "Feature"}, {"geometry": {"coordinates": [[[8.799628, 57.640256], [8.8861, 57.132116], [9.839975, 56.960452], [10.722652, 57.295139], [10.652048, 57.804881], [9.682736, 57.978393], [8.799628, 57.640256]]], "type": "Polygon"}, "hex_id": "831f24fffffffff", "id": "8", "properties": {"country": "Denmark", "type": "Firing Area", "value": 2}, "type": "Feature"}, {"geometry": {"coordinates": [[[13.674893, 55.658102], [13.717125, 55.123081], [14.640207, 54.902182], [15.533114, 55.214069], [15.506708, 55.750138], [14.571482, 55.973336], [13.674893, 55.658102]]], "type": "Polygon"}, "hex_id": "831f2afffffffff", "id": "9", "properties": {"country": "Denmark", "type": "Firing Area", "value": 3}, "type": "Feature"}, {"geometry": {"coordinates": [[[6.550186, 55.031311], [6.651186, 54.503095], [7.559644, 54.335402], [8.381901, 54.694912], [8.294768, 55.225197], [7.371346, 55.393956], [6.550186, 55.031311]]], "type": "Polygon"}, "hex_id": "831f30fffffffff", "id": "10", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[8.294768, 55.225197], [8.381901, 54.694912], [9.296563, 54.514365], [10.138365, 54.862761], [10.065692, 55.394879], [9.136608, 55.576825], [8.294768, 55.225197]]], "type": "Polygon"}, "hex_id": "831f31fffffffff", "id": "11", "properties": {"country": "Denmark", "type": "Firing Area", "value": 2}, "type": "Feature"}, {"geometry": {"coordinates": [[[7.274782, 55.915609], [7.371346, 55.393956], [8.294768, 55.225197], [9.136608, 55.576825], [9.054551, 56.10039], [8.115982, 56.270471], [7.274782, 55.915609]]], "type": "Polygon"}, "hex_id": "831f35fffffffff", "id": "12", "properties": {"country": "Denmark", "type": "Firing Area", "value": 4}, "type": "Feature"}, {"geometry": {"coordinates": [[[23.372801, 35.629835], [23.339733, 34.958641], [24.035998, 34.596858], [24.769195, 34.903321], [24.812005, 35.574008], [24.1119, 35.938786], [23.372801, 35.629835]]], "type": "Polygon"}, "hex_id": "833f72fffffffff", "id": "13", "properties": {"country": "Greece\n", "type": "Firing Area", "value": 2}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        function geo_json_02d128b3e0774e1ca8f3478a07c7521a_styler(feature) {
+            switch(feature.id) {
+                case "6": case "7": case "9": case "12": case "15": 
+                    return {"color": "black", "fillColor": "#55ab00ff", "fillOpacity": 0.7, "weight": 1};
+                case "11": 
+                    return {"color": "black", "fillColor": "#ff0000ff", "fillOpacity": 0.7, "weight": 1};
+                case "19": 
+                    return {"color": "black", "fillColor": "#aad500ff", "fillOpacity": 0.7, "weight": 1};
+                default:
+                    return {"color": "black", "fillColor": "#008000ff", "fillOpacity": 0.7, "weight": 1};
+            }
+        }
+
+        function geo_json_02d128b3e0774e1ca8f3478a07c7521a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_02d128b3e0774e1ca8f3478a07c7521a = L.geoJson(null, {
+                onEachFeature: geo_json_02d128b3e0774e1ca8f3478a07c7521a_onEachFeature,
+            
+                style: geo_json_02d128b3e0774e1ca8f3478a07c7521a_styler,
+        });
+
+        function geo_json_02d128b3e0774e1ca8f3478a07c7521a_add (data) {
+            geo_json_02d128b3e0774e1ca8f3478a07c7521a
+                .addData(data)
+                .addTo(map_2a40d55fe5ba4c20aca4688ad28e2de9);
+        }
+            geo_json_02d128b3e0774e1ca8f3478a07c7521a_add({"features": [{"geometry": {"coordinates": [[[10.322299, 58.215594], [10.332958, 58.143755], [10.472067, 58.118885], [10.600834, 58.165813], [10.590512, 58.237682], [10.451086, 58.262594], [10.322299, 58.215594]]], "type": "Polygon"}, "hex_id": "85099a1bfffffff", "id": "0", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[22.709737, 39.351776], [22.70547, 39.257999], [22.810192, 39.208315], [22.919277, 39.252353], [22.923761, 39.346126], [22.818943, 39.395865], [22.709737, 39.351776]]], "type": "Polygon"}, "hex_id": "851ede03fffffff", "id": "1", "properties": {"country": "Greece\n", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[10.41117, 54.731688], [10.421104, 54.655012], [10.552144, 54.627368], [10.673531, 54.676368], [10.663897, 54.753079], [10.532576, 54.780755], [10.41117, 54.731688]]], "type": "Polygon"}, "hex_id": "851f06b3fffffff", "id": "2", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[15.540574, 55.059957], [15.54429, 54.982743], [15.675841, 54.949539], [15.803908, 54.9935], [15.800514, 55.070733], [15.66873, 55.103986], [15.540574, 55.059957]]], "type": "Polygon"}, "hex_id": "851f0c87fffffff", "id": "3", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[10.425406, 56.562778], [10.43563, 56.488581], [10.570733, 56.462316], [10.69591, 56.510211], [10.686004, 56.58444], [10.550603, 56.610742], [10.425406, 56.562778]]], "type": "Polygon"}, "hex_id": "851f2047fffffff", "id": "4", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[9.778756, 55.598536], [9.789596, 55.52318], [9.92242, 55.496915], [10.044699, 55.545973], [10.034163, 55.621363], [9.901044, 55.647661], [9.778756, 55.598536]]], "type": "Polygon"}, "hex_id": "851f227bfffffff", "id": "5", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[11.175598, 55.830791], [11.18478, 55.755411], [11.318288, 55.72773], [11.442897, 55.775392], [11.434029, 55.850803], [11.300237, 55.878521], [11.175598, 55.830791]]], "type": "Polygon"}, "hex_id": "851f2343fffffff", "id": "6", "properties": {"country": "Denmark", "type": "Firing Area", "value": 2}, "type": "Feature"}, {"geometry": {"coordinates": [[[11.692897, 55.870285], [11.70145, 55.794844], [11.835077, 55.766605], [11.960429, 55.813767], [11.952192, 55.889237], [11.818287, 55.917516], [11.692897, 55.870285]]], "type": "Polygon"}, "hex_id": "851f2373fffffff", "id": "7", "properties": {"country": "Denmark", "type": "Firing Area", "value": 2}, "type": "Feature"}, {"geometry": {"coordinates": [[[11.576467, 55.747432], [11.585146, 55.671848], [11.718493, 55.643647], [11.84344, 55.690991], [11.835077, 55.766605], [11.70145, 55.794844], [11.576467, 55.747432]]], "type": "Polygon"}, "hex_id": "851f237bfffffff", "id": "8", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[11.641127, 56.320722], [11.64981, 56.245912], [11.784454, 56.218076], [11.910699, 56.265008], [11.902337, 56.339846], [11.767409, 56.367723], [11.641127, 56.320722]]], "type": "Polygon"}, "hex_id": "851f238ffffffff", "id": "9", "properties": {"country": "Denmark", "type": "Firing Area", "value": 2}, "type": "Feature"}, {"geometry": {"coordinates": [[[11.004238, 56.158429], [11.013682, 56.083537], [11.147915, 56.056302], [11.272993, 56.103921], [11.263865, 56.178843], [11.129344, 56.206117], [11.004238, 56.158429]]], "type": "Polygon"}, "hex_id": "851f23c3fffffff", "id": "10", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[11.147915, 56.056302], [11.157166, 55.981237], [11.291178, 55.95376], [11.416226, 56.00131], [11.407292, 56.076405], [11.272993, 56.103921], [11.147915, 56.056302]]], "type": "Polygon"}, "hex_id": "851f23cffffffff", "id": "11", "properties": {"country": "Denmark", "type": "Firing Area", "value": 7}, "type": "Feature"}, {"geometry": {"coordinates": [[[9.396577, 57.254314], [9.408203, 57.181338], [9.544788, 57.156779], [9.670061, 57.205161], [9.658755, 57.278171], [9.521856, 57.302766], [9.396577, 57.254314]]], "type": "Polygon"}, "hex_id": "851f2447fffffff", "id": "12", "properties": {"country": "Denmark", "type": "Firing Area", "value": 2}, "type": "Feature"}, {"geometry": {"coordinates": [[[15.393138, 55.40048], [15.397059, 55.32375], [15.52937, 55.290967], [15.657998, 55.334866], [15.654402, 55.411615], [15.521854, 55.444446], [15.393138, 55.40048]]], "type": "Polygon"}, "hex_id": "851f2a27fffffff", "id": "13", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[13.849235, 55.092042], [13.855043, 55.015125], [13.98691, 54.983849], [14.11322, 55.029446], [14.107729, 55.106387], [13.975611, 55.137707], [13.849235, 55.092042]]], "type": "Polygon"}, "hex_id": "851f2a4bfffffff", "id": "14", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[14.7624, 55.024347], [14.767076, 54.947193], [14.898687, 54.914837], [15.025863, 54.959588], [15.021506, 55.036762], [14.889654, 55.069165], [14.7624, 55.024347]]], "type": "Polygon"}, "hex_id": "851f2a6ffffffff", "id": "15", "properties": {"country": "Denmark", "type": "Firing Area", "value": 2}, "type": "Feature"}, {"geometry": {"coordinates": [[[8.043866, 55.198959], [8.056695, 55.123555], [8.188263, 55.098965], [8.307306, 55.149754], [8.294768, 55.225197], [8.162896, 55.249813], [8.043866, 55.198959]]], "type": "Polygon"}, "hex_id": "851f30a7fffffff", "id": "16", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[9.447174, 55.223654], [9.458344, 55.147883], [9.590289, 55.121711], [9.711357, 55.17128], [9.700486, 55.247087], [9.568248, 55.27329], [9.447174, 55.223654]]], "type": "Polygon"}, "hex_id": "851f31abfffffff", "id": "17", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[8.294768, 55.225197], [8.307306, 55.149754], [8.438998, 55.124897], [8.558454, 55.175458], [8.546208, 55.250941], [8.414214, 55.275824], [8.294768, 55.225197]]], "type": "Polygon"}, "hex_id": "851f31d3fffffff", "id": "18", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[7.966238, 55.649198], [7.979255, 55.574418], [8.111791, 55.55026], [8.231618, 55.600855], [8.218895, 55.675675], [8.08605, 55.699859], [7.966238, 55.649198]]], "type": "Polygon"}, "hex_id": "851f350bfffffff", "id": "19", "properties": {"country": "Denmark", "type": "Firing Area", "value": 3}, "type": "Feature"}, {"geometry": {"coordinates": [[[7.926995, 55.872912], [7.940108, 55.798445], [8.073133, 55.774502], [8.193356, 55.825], [8.18054, 55.899506], [8.047203, 55.923476], [7.926995, 55.872912]]], "type": "Polygon"}, "hex_id": "851f3513fffffff", "id": "20", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[23.989917, 35.608002], [23.984564, 35.512264], [24.084554, 35.460442], [24.189975, 35.504298], [24.195528, 35.600026], [24.09546, 35.651908], [23.989917, 35.608002]]], "type": "Polygon"}, "hex_id": "853f728ffffffff", "id": "21", "properties": {"country": "Greece\n", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[24.195528, 35.600026], [24.189975, 35.504298], [24.289838, 35.452308], [24.395331, 35.495985], [24.401083, 35.591701], [24.301144, 35.643752], [24.195528, 35.600026]]], "type": "Polygon"}, "hex_id": "853f72bbfffffff", "id": "22", "properties": {"country": "Greece\n", "type": "Firing Area", "value": 1}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        function geo_json_81563f10a9fb4e90a6529981d80c4a5d_styler(feature) {
+            switch(feature.id) {
+                case "6": case "7": case "9": case "12": case "15": 
+                    return {"color": "black", "fillColor": "#55ab00ff", "fillOpacity": 0.7, "weight": 1};
+                case "11": 
+                    return {"color": "black", "fillColor": "#ff0000ff", "fillOpacity": 0.7, "weight": 1};
+                case "19": 
+                    return {"color": "black", "fillColor": "#aad500ff", "fillOpacity": 0.7, "weight": 1};
+                default:
+                    return {"color": "black", "fillColor": "#008000ff", "fillOpacity": 0.7, "weight": 1};
+            }
+        }
+
+        function geo_json_81563f10a9fb4e90a6529981d80c4a5d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_81563f10a9fb4e90a6529981d80c4a5d = L.geoJson(null, {
+                onEachFeature: geo_json_81563f10a9fb4e90a6529981d80c4a5d_onEachFeature,
+            
+                style: geo_json_81563f10a9fb4e90a6529981d80c4a5d_styler,
+        });
+
+        function geo_json_81563f10a9fb4e90a6529981d80c4a5d_add (data) {
+            geo_json_81563f10a9fb4e90a6529981d80c4a5d
+                .addData(data)
+                .addTo(map_2a40d55fe5ba4c20aca4688ad28e2de9);
+        }
+            geo_json_81563f10a9fb4e90a6529981d80c4a5d_add({"features": [{"geometry": {"coordinates": [[[10.488722, 58.251608], [10.486517, 58.247721], [10.492421, 58.245241], [10.50053, 58.246647], [10.502735, 58.250534], [10.496831, 58.253014], [10.488722, 58.251608]]], "type": "Polygon"}, "hex_id": "88099a0365fffff", "id": "0", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[22.824616, 39.236691], [22.822212, 39.231962], [22.826395, 39.228017], [22.832983, 39.2288], [22.835388, 39.233529], [22.831205, 39.237474], [22.824616, 39.236691]]], "type": "Polygon"}, "hex_id": "881ede0187fffff", "id": "1", "properties": {"country": "Greece\n", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[10.438306, 54.703171], [10.436236, 54.699039], [10.441791, 54.69635], [10.449417, 54.697792], [10.451488, 54.701924], [10.445932, 54.704614], [10.438306, 54.703171]]], "type": "Polygon"}, "hex_id": "881f06b32bfffff", "id": "2", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[15.669748, 55.081948], [15.667277, 55.077901], [15.672728, 55.074972], [15.680651, 55.076089], [15.683123, 55.080135], [15.677672, 55.083065], [15.669748, 55.081948]]], "type": "Polygon"}, "hex_id": "881f0c861dfffff", "id": "3", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[10.429791, 56.530992], [10.427657, 56.526983], [10.433385, 56.524402], [10.441246, 56.525829], [10.44338, 56.529838], [10.437653, 56.53242], [10.429791, 56.530992]]], "type": "Polygon"}, "hex_id": "881f20472dfffff", "id": "4", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[9.799303, 55.584044], [9.797252, 55.579965], [9.8029, 55.577361], [9.8106, 55.578834], [9.812652, 55.582913], [9.807003, 55.585518], [9.799303, 55.584044]]], "type": "Polygon"}, "hex_id": "881f227b0dfffff", "id": "5", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[11.267585, 55.751779], [11.265415, 55.747725], [11.27105, 55.745054], [11.278855, 55.746438], [11.281026, 55.750493], [11.27539, 55.753164], [11.267585, 55.751779]]], "type": "Polygon"}, "hex_id": "881f234133fffff", "id": "6", "properties": {"country": "Denmark", "type": "Firing Area", "value": 2}, "type": "Feature"}, {"geometry": {"coordinates": [[[11.948917, 55.870383], [11.946691, 55.866343], [11.952321, 55.863644], [11.960178, 55.864986], [11.962405, 55.869026], [11.956774, 55.871724], [11.948917, 55.870383]]], "type": "Polygon"}, "hex_id": "881f237761fffff", "id": "7", "properties": {"country": "Denmark", "type": "Firing Area", "value": 2}, "type": "Feature"}, {"geometry": {"coordinates": [[[11.79187, 55.700444], [11.789662, 55.696391], [11.79528, 55.693691], [11.803106, 55.695044], [11.805315, 55.699097], [11.799697, 55.701797], [11.79187, 55.700444]]], "type": "Polygon"}, "hex_id": "881f2378abfffff", "id": "8", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[11.828029, 56.283665], [11.825797, 56.279652], [11.831469, 56.276985], [11.839375, 56.27833], [11.841608, 56.282343], [11.835935, 56.28501], [11.828029, 56.283665]]], "type": "Polygon"}, "hex_id": "881f238ce1fffff", "id": "9", "properties": {"country": "Denmark", "type": "Firing Area", "value": 2}, "type": "Feature"}, {"geometry": {"coordinates": [[[11.21366, 56.151798], [11.21148, 56.14777], [11.217154, 56.145126], [11.225008, 56.146509], [11.22719, 56.150537], [11.221515, 56.153182], [11.21366, 56.151798]]], "type": "Polygon"}, "hex_id": "881f23c2b5fffff", "id": "10", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[11.276854, 56.006056], [11.274675, 56.002018], [11.280333, 55.999362], [11.288172, 56.000743], [11.290353, 56.004781], [11.284694, 56.007437], [11.276854, 56.006056]]], "type": "Polygon"}, "hex_id": "881f23cdc9fffff", "id": "11", "properties": {"country": "Denmark", "type": "Firing Area", "value": 7}, "type": "Feature"}, {"geometry": {"coordinates": [[[9.477589, 57.205093], [9.475506, 57.201123], [9.481319, 57.198631], [9.489216, 57.200109], [9.4913, 57.204079], [9.485487, 57.206571], [9.477589, 57.205093]]], "type": "Polygon"}, "hex_id": "881f244557fffff", "id": "12", "properties": {"country": "Denmark", "type": "Firing Area", "value": 2}, "type": "Feature"}, {"geometry": {"coordinates": [[[15.497897, 55.334393], [15.495428, 55.330362], [15.500908, 55.327456], [15.508856, 55.328581], [15.511326, 55.332613], [15.505847, 55.335519], [15.497897, 55.334393]]], "type": "Polygon"}, "hex_id": "881f2a2513fffff", "id": "13", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[13.913908, 55.005818], [13.911567, 55.001743], [13.917066, 54.998895], [13.924907, 55.000123], [13.927248, 55.004199], [13.921749, 55.007047], [13.913908, 55.005818]]], "type": "Polygon"}, "hex_id": "881f2a4935fffff", "id": "14", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[14.913482, 55.024552], [14.911067, 55.020491], [14.916538, 55.017595], [14.924423, 55.01876], [14.926839, 55.022821], [14.921368, 55.025717], [14.913482, 55.024552]]], "type": "Polygon"}, "hex_id": "881f2a6ee5fffff", "id": "15", "properties": {"country": "Denmark", "type": "Firing Area", "value": 2}, "type": "Feature"}, {"geometry": {"coordinates": [[[8.275433, 55.169172], [8.273514, 55.165056], [8.279146, 55.162507], [8.286699, 55.164073], [8.288619, 55.168189], [8.282986, 55.170738], [8.275433, 55.169172]]], "type": "Polygon"}, "hex_id": "881f30a483fffff", "id": "16", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[9.620612, 55.183339], [9.618588, 55.179232], [9.624202, 55.176613], [9.63184, 55.178101], [9.633865, 55.182207], [9.62825, 55.184826], [9.620612, 55.183339]]], "type": "Polygon"}, "hex_id": "881f31a8e5fffff", "id": "17", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[8.509709, 55.202624], [8.50777, 55.198512], [8.513403, 55.195952], [8.520975, 55.197505], [8.522914, 55.201617], [8.517281, 55.204177], [8.509709, 55.202624]]], "type": "Polygon"}, "hex_id": "881f31d089fffff", "id": "18", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[8.093018, 55.583294], [8.0911, 55.579205], [8.096774, 55.576689], [8.104366, 55.578263], [8.106285, 55.582352], [8.100611, 55.584868], [8.093018, 55.583294]]], "type": "Polygon"}, "hex_id": "881f3509ebfffff", "id": "19", "properties": {"country": "Denmark", "type": "Firing Area", "value": 3}, "type": "Feature"}, {"geometry": {"coordinates": [[[8.168635, 55.83095], [8.166703, 55.826878], [8.1724, 55.824372], [8.180029, 55.82594], [8.181962, 55.830012], [8.176265, 55.832517], [8.168635, 55.83095]]], "type": "Polygon"}, "hex_id": "881f3510b1fffff", "id": "20", "properties": {"country": "Denmark", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[24.164568, 35.610058], [24.162188, 35.605258], [24.166159, 35.601186], [24.172509, 35.601915], [24.174889, 35.606715], [24.170919, 35.610787], [24.164568, 35.610058]]], "type": "Polygon"}, "hex_id": "883f728ed7fffff", "id": "21", "properties": {"country": "Greece\n", "type": "Firing Area", "value": 1}, "type": "Feature"}, {"geometry": {"coordinates": [[[24.216944, 35.534561], [24.214563, 35.52976], [24.218528, 35.525685], [24.224873, 35.526412], [24.227255, 35.531212], [24.22329, 35.535287], [24.216944, 35.534561]]], "type": "Polygon"}, "hex_id": "883f72b941fffff", "id": "22", "properties": {"country": "Greece\n", "type": "Firing Area", "value": 1}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            var layer_control_893941d48b2c4262afb1c52b3c20c806 = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_afe2937812a14237ae22325b9a5775f9,
+                },
+                overlays :  {
+                    "Choropleth 1" : geo_json_fdbe32608f3a447eb01e9c5e8e6c48b7,
+                    "Choropleth 3" : geo_json_f9c8ba1108264c76a236bf9b2a6091c2,
+                    "Choropleth 5" : geo_json_02d128b3e0774e1ca8f3478a07c7521a,
+                    "Choropleth 8" : geo_json_81563f10a9fb4e90a6529981d80c4a5d,
+                },
+            };
+            L.control.layers(
+                layer_control_893941d48b2c4262afb1c52b3c20c806.base_layers,
+                layer_control_893941d48b2c4262afb1c52b3c20c806.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "bottomright"}
+            ).addTo(map_2a40d55fe5ba4c20aca4688ad28e2de9);
+        
+</script>
