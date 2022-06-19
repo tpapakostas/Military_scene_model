@@ -3,4 +3,4 @@ This repository contains visual interpretations of a military scene model create
 
 
 # Discrete Global Grid System framework
-The Discrete Global Grid System framework that was utilised to transform and integrate the datasets is the H3 Hexagonal hierarchical geospatial indexing system, provided by Uber.
+The Discrete Global Grid System framework that was utilised to transform and integrate the datasets is the [H3](https://h3geo.org/) Hexagonal hierarchical geospatial indexing system, provided by Uber.
