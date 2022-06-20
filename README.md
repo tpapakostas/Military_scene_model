@@ -10,3 +10,4 @@ Both military non classified and civil open source geospatial datasets are used.
 
 ## Discrete Global Grid System framework
 The Discrete Global Grid System framework that was utilised to transform and integrate the datasets is the [H3](https://h3geo.org/) Hexagonal hierarchical geospatial indexing system, provided by Uber.
+
