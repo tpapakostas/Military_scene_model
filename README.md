@@ -1,5 +1,5 @@
 # Modelling a military scene using a Discrete Global Grid System
-This repository contains visual interpretations of a military scene model created during the graduation project of Theodoros Papakostas for the MSc in Geomatics, Faculty of Architecture, TU Delft. For further details the thesis report will be available in the TUDelft repository.
+This repository contains visual interpretations of a military scene model created during the graduation project of Theodoros Papakostas for the MSc in Geomatics, Faculty of Architecture, TU Delft. For further details the thesis report is available in the [TUDelft education research repository](https://repository.tudelft.nl/islandora/object/uuid%3Aaca1d742-9fbe-4577-a4fd-b8b0ba50f368?collection=education).
 
 ## Datasets
 Both military non classified and civil open source geospatial datasets are used. The military scene of scope is the European region.
